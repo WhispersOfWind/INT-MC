@@ -1,0 +1,56 @@
+23:38:27.818  root      : INFO    : ++++++++ Sun May  5 23:38:27 2024 ++++++++
+23:38:27.871  getmac    : DEBUG   : Raw MAC found: 6c:ec:5a:61:5e:68
+
+23:38:27.927  root      : DEBUG   : Parsed test parameters:
+23:38:27.927  root      : DEBUG   : 	*grpc_server=localhost
+23:38:27.927  root      : DEBUG   : 	*setup=False
+23:38:27.927  root      : DEBUG   : 	*test_seed=None
+23:38:27.927  root      : DEBUG   : 	*reboot=none
+23:38:27.927  root      : DEBUG   : 	*p4c=
+23:38:27.928  root      : DEBUG   : 	*counter_byte_adjust=0
+23:38:27.928  root      : DEBUG   : 	*config_file=filename
+23:38:27.928  root      : DEBUG   : 	*arch=tofino
+23:38:27.928  root      : DEBUG   : 	*thrift_server=localhost
+23:38:27.928  root      : DEBUG   : 	*port_mode=100g
+23:38:27.928  root      : DEBUG   : 	*target=asic-model
+23:38:27.928  root      : DEBUG   : 	*p4_name=
+23:38:27.928  root      : DEBUG   : 	*traffic_gen=None
+23:38:27.928  root      : DEBUG   : 	*num_pipes=4
+23:38:27.928  root      : DEBUG   : 	*drivers_test_info=None
+23:38:27.928  root      : DEBUG   : 	*cleanup=False
+23:38:27.928  root      : DEBUG   : 	*use_pi=False
+23:38:27.928  root      : DEBUG   : If something is missing, make sure you used the correct syntax: --test-params="[k=v;]*k=v"
+23:38:28.068  root      : INFO    : Importing platform: eth
+23:38:28.069  root      : DEBUG   : Configuration: {'fail_skipped': False, 'test_file': None, 'test_order_seed': 2746, 'test_case_timeout': None, 'qlen': 100, 'disable_geneve': False, 'default_timeout': 2.0, 'port_map': {(0, 1): 'veth3', (0, 0): 'veth1', (0, 15): 'veth31', (0, 14): 'veth29', (0, 13): 'veth27', (0, 64): 'veth251', (0, 7): 'veth15', (0, 12): 'veth25', (0, 6): 'veth13', (0, 11): 'veth23', (0, 16): 'veth33', (0, 5): 'veth11', (0, 10): 'veth21', (0, 4): 'veth9', (0, 9): 'veth19', (0, 3): 'veth7', (0, 8): 'veth17', (0, 2): 'veth5'}, 'disable_ipv6': False, 'platform_args': None, 'list': False, 'test_spec': '', 'list_test_names': False, 'xunit': False, 'disable_mpls': False, 'disable_rocev2': False, 'default_negative_timeout': 0.1, 'allow_user': False, 'disable_vxlan': False, 'port_info': {}, 'test_dir': './', 'disable_erspan': False, 'disable_nvgre': False, 'debug': 'verbose', 'disable_igmp': False, 'relax': False, 'socket_recv_size': 10240, 'platform_dir': '/root/SDE/bf-sde-9.7.0/install/lib/python3.5/site-packages/bf-ptf/ptf/platforms', 'failfast': False, 'minsize': 0, 'profile': False, 'interfaces': [(0, 0, 'veth1'), (0, 1, 'veth3'), (0, 2, 'veth5'), (0, 3, 'veth7'), (0, 4, 'veth9'), (0, 5, 'veth11'), (0, 6, 'veth13'), (0, 7, 'veth15'), (0, 8, 'veth17'), (0, 9, 'veth19'), (0, 10, 'veth21'), (0, 11, 'veth23'), (0, 12, 'veth25'), (0, 13, 'veth27'), (0, 14, 'veth29'), (0, 15, 'veth31'), (0, 16, 'veth33'), (0, 64, 'veth251')], 'test_order': 'default', 'xunit_dir': 'xunit', 'log_file': 'ptf.log', 'platform': 'eth', 'device_sockets': [], 'log_dir': None, 'profile_file': 'profile.out', 'random_seed': None, 'test_params': "arch='tofino';p4_name='';target='asic-model';use_pi='False';traffic_gen='None';config_file='filename';drivers_test_info='None';test_seed='None';num_pipes='4';port_mode='100g';counter_byte_adjust='0';setup=False;cleanup=False;p4c='';thrift_server='localhost';grpc_server='localhost';reboot='none';"}
+23:38:28.069  root      : INFO    : port map: {(0, 1): 'veth3', (0, 0): 'veth1', (0, 15): 'veth31', (0, 14): 'veth29', (0, 13): 'veth27', (0, 64): 'veth251', (0, 7): 'veth15', (0, 12): 'veth25', (0, 6): 'veth13', (0, 11): 'veth23', (0, 16): 'veth33', (0, 5): 'veth11', (0, 10): 'veth21', (0, 4): 'veth9', (0, 9): 'veth19', (0, 3): 'veth7', (0, 8): 'veth17', (0, 2): 'veth5'}
+23:38:28.069  root      : INFO    : Autogen random seed: 99109777
+23:38:28.169  root      : INFO    : *** TEST RUN START: Sun May  5 23:38:28 2024
+23:38:28.170  root      : INFO    : ** START TEST CASE test.LpmMatch_ipv4_0
+23:38:28.175  bfruntime_grpc_client: INFO    : Subscribe attempt #1
+23:38:28.177  bfruntime_grpc_client: INFO    : Subscribe response received 0
+23:38:28.177  bfruntime_grpc_client: INFO    : Binding with p4_name int_pipe_2
+23:38:28.178  bfruntime_grpc_client: INFO    : Binding with p4_name int_pipe_2 successful!!
+23:38:28.245  bfruntime_grpc_client: INFO    : Received int_pipe_2 on GetForwarding on client 0, device 0
+23:38:28.265  Test      : INFO    : Adding 192.168.123.167 32 56
+23:38:28.267  Test      : INFO    : Adding 192.168.123.168 32 56
+23:38:28.268  Test      : INFO    : Adding 192.168.123.169 32 56
+23:38:28.269  Test      : INFO    : Adding 192.168.123.166 32 48
+23:38:28.269  Test      : INFO    : Adding 192.168.123.170 32 56
+23:38:28.270  Test      : INFO    : Adding 192.168.123.171 32 32
+23:38:28.271  Test      : INFO    : Adding 192.168.123.172 32 40
+23:38:28.272  Test      : INFO    : Adding 192.168.123.173 32 48
+23:38:28.272  Test      : INFO    : Adding 192.168.123.174 32 48
+23:38:28.273  Test      : INFO    : Adding 192.168.123.175 32 48
+23:38:28.274  Test      : INFO    : Adding 192.168.123.167 32 132
+23:38:28.275  Test      : INFO    : Adding 192.168.123.168 32 140
+23:38:28.276  Test      : INFO    : Adding 192.168.123.169 32 132
+23:38:28.278  Test      : INFO    : Adding 192.168.123.166 32 148
+23:38:28.279  Test      : INFO    : Adding 192.168.123.170 32 140
+23:38:28.281  Test      : INFO    : Adding 192.168.123.171 32 132
+23:38:28.282  Test      : INFO    : Adding 192.168.123.172 32 156
+23:38:28.283  Test      : INFO    : Adding 192.168.123.173 32 140
+23:38:28.285  Test      : INFO    : Adding 192.168.123.174 32 148
+23:38:28.286  Test      : INFO    : Adding 192.168.123.175 32 140
+23:38:28.288  root      : INFO    : ** END TEST CASE test.LpmMatch_ipv4_0
+23:38:28.288  root      : INFO    : *** TEST RUN END  : Sun May  5 23:38:28 2024
+23:38:28.288  dataplane : INFO    : Thread exit
