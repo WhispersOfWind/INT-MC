@@ -1,0 +1,247 @@
+{
+  "program": "p4src/simple_int.p4",
+  "switch": "simple_switch",
+  "compiler": "p4c",
+  "options": "--target bmv2 --arch v1model --std p4-16",
+  "switch_cli": "simple_switch_CLI",
+  "cli": true,
+  "pcap_dump": true,
+  "enable_log": true,
+  "topo_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.apptopo",
+    "object_name": "AppTopoStrategies"
+  },
+  "controller_module": null,
+  "topodb_module": {
+    "file_path": "",
+    "module_name": "p4utils.utils.topology",
+    "object_name": "Topology"
+  },
+  "mininet_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.p4net",
+    "object_name": "P4Mininet"
+  },
+  "topology": {
+    "assignment_strategy": "mixed",
+    "auto_arp_tables": "true",
+    "auto_gw_arp": "true",
+
+    "links": [  ["s1", "s30"], ["s1", "s47"], ["s1", "s49"],
+["s2", "s35"], ["s2", "s48"], ["s2", "s50"],
+["s3", "s9"], ["s3", "s32"], ["s3", "s38"],
+["s4", "s12"], ["s4", "s21"], ["s4", "s32"], ["s4", "s33"], ["s4", "s44"],
+["s5", "s6"], ["s5", "s23"], ["s5", "s36"], ["s5", "s45"],
+["s6", "s22"], ["s6", "s23"],["s6", "s26"],["s6", "s33"],
+["s7", "s8"],["s7", "s23"],["s7", "s39"],
+["s8", "s16"],
+["s9", "s12"],["s9", "s14"],
+["s10", "s17"],["s10", "s24"],["s10", "s34"],
+["s11", "s15"],["s11", "s26"],["s11", "s36"],["s11", "s45"],
+["s12", "s14"],["s12", "s32"],
+["s13", "s15"],["s13", "s30"],
+["s14", "s26"],["s14", "s32"],["s14", "s50"],
+["s15", "s49"],
+["s16", "s28"],
+["s17", "s19"],["s17", "s20"],["s17", "s29"],
+["s18", "s25"],["s18", "s31"],
+["s19", "s20"],["s19", "s26"],["s19", "s50"],
+["s20", "s26"],["s20", "s45"],
+["s21", "s44"],
+["s22", "s23"],["s22", "s28"],["s22", "s44"],
+["s23", "s40"],
+["s24", "s25"],["s24", "s29"],["s24", "s43"],
+["s25", "s34"],["s25", "s43"],["s25", "s46"],
+["s27", "s31"],["s27", "s35"],
+["s28", "s44"],
+["s29", "s30"],["s29", "s45"],["s29", "s47"],
+["s31", "s46"],
+["s32", "s33"],
+["s33", "s44"],
+["s35", "s38"],["s35", "s41"],["s35", "s42"],
+["s36", "s40"],
+["s37", "s39"],["s37", "s49"],
+["s38", "s42"],["s38", "s50"],
+["s39", "s40"],["s39", "s49"],
+["s41", "s42"],
+["s43", "s47"],["s1", "h1"],["s2", "h2"],["s3", "h3"],["s4", "h4"],["s5", "h5"],["s6", "h6"],["s7", "h7"],["s8", "h8"],["s9", "h9"],["s10", "h10"],
+["s46", "s48"],["s46", "s50"]],
+
+    "hosts": {
+      "h1": {
+      },
+      "h2": {
+      },
+      "h3": {
+      },
+      "h4": {
+      },
+      "h5": {
+      },
+      "h6": {
+      },
+      "h7": {
+      },
+      "h8": {
+      },
+      "h9": {
+      },
+      "h10": {
+      }
+    },
+    "switches": {
+
+      "s1": {
+        "cli_input": "SW-commands/s1-commands.txt"
+      },
+      "s2": {
+        "cli_input": "SW-commands/s2-commands.txt"
+      },
+      "s3": {
+        "cli_input": "SW-commands/s3-commands.txt"
+      },
+      "s4": {
+        "cli_input": "SW-commands/s4-commands.txt"
+      },	
+      "s5": {
+        "cli_input": "SW-commands/s5-commands.txt"
+      }	,
+      "s6": {
+        "cli_input": "SW-commands/s6-commands.txt"
+      },
+      "s7": {
+        "cli_input": "SW-commands/s7-commands.txt"
+      },
+      "s8": {
+        "cli_input": "SW-commands/s8-commands.txt"
+      },
+      "s9": {
+        "cli_input": "SW-commands/s9-commands.txt"
+      },	
+      "s10": {
+        "cli_input": "SW-commands/s10-commands.txt"
+      }	,
+      "s11": {
+        "cli_input": "SW-commands/s11-commands.txt"
+      },
+      "s12": {
+        "cli_input": "SW-commands/s12-commands.txt"
+      },
+      "s13": {
+        "cli_input": "SW-commands/s13-commands.txt"
+      },
+      "s14": {
+        "cli_input": "SW-commands/s14-commands.txt"
+      },	
+      "s15": {
+        "cli_input": "SW-commands/s15-commands.txt"
+      }	,
+      "s16": {
+        "cli_input": "SW-commands/s16-commands.txt"
+      },
+      "s17": {
+        "cli_input": "SW-commands/s17-commands.txt"
+      },
+      "s18": {
+        "cli_input": "SW-commands/s18-commands.txt"
+      },
+      "s19": {
+        "cli_input": "SW-commands/s19-commands.txt"
+      },	
+      "s20": {
+        "cli_input": "SW-commands/s20-commands.txt"
+      }	,
+      "s21": {
+        "cli_input": "SW-commands/s21-commands.txt"
+      },
+      "s22": {
+        "cli_input": "SW-commands/s22-commands.txt"
+      },
+      "s23": {
+        "cli_input": "SW-commands/s23-commands.txt"
+      },
+      "s24": {
+        "cli_input": "SW-commands/s24-commands.txt"
+      },
+      "s25": {
+        "cli_input": "SW-commands/s25-commands.txt"
+      } ,
+      "s26": {
+        "cli_input": "SW-commands/s26-commands.txt"
+      } ,
+      "s27": {
+        "cli_input": "SW-commands/s27-commands.txt"
+      } ,
+      "s28": {
+        "cli_input": "SW-commands/s28-commands.txt"
+      } ,
+      "s29": {
+        "cli_input": "SW-commands/s29-commands.txt"
+      } ,
+      "s30": {
+        "cli_input": "SW-commands/s30-commands.txt"
+      } ,
+      "s31": {
+        "cli_input": "SW-commands/s31-commands.txt"
+      } ,
+      "s32": {
+        "cli_input": "SW-commands/s32-commands.txt"
+      },
+      "s33": {
+        "cli_input": "SW-commands/s33-commands.txt"
+      },
+      "s34": {
+        "cli_input": "SW-commands/s34-commands.txt"
+      },
+      "s35": {
+        "cli_input": "SW-commands/s35-commands.txt"
+      },
+      "s36": {
+        "cli_input": "SW-commands/s36-commands.txt"
+      },
+      "s37": {
+        "cli_input": "SW-commands/s37-commands.txt"
+      },
+      "s38": {
+        "cli_input": "SW-commands/s38-commands.txt"
+      },
+      "s39": {
+        "cli_input": "SW-commands/s39-commands.txt"
+      },
+      "s40": {
+        "cli_input": "SW-commands/s40-commands.txt"
+      } ,
+      "s41": {
+        "cli_input": "SW-commands/s41-commands.txt"
+      } ,
+      "s42": {
+        "cli_input": "SW-commands/s42-commands.txt"
+      } ,
+      "s43": {
+        "cli_input": "SW-commands/s43-commands.txt"
+      } ,
+      "s44": {
+        "cli_input": "SW-commands/s44-commands.txt"
+      } ,
+      "s45": {
+        "cli_input": "SW-commands/s45-commands.txt"
+      } ,
+      "s46": {
+        "cli_input": "SW-commands/s46-commands.txt"
+      } ,
+      "s47": {
+        "cli_input": "SW-commands/s47-commands.txt"
+      } ,
+      "s48": {
+        "cli_input": "SW-commands/s48-commands.txt"
+      } ,
+      "s49": {
+        "cli_input": "SW-commands/s49-commands.txt"
+      } ,
+      "s50": {
+        "cli_input": "SW-commands/s50-commands.txt"
+      }    
+    }
+  }
+}

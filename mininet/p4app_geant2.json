@@ -1,0 +1,145 @@
+{
+  "program": "p4src/simple_int_register.p4",
+  "switch": "simple_switch",
+  "compiler": "p4c",
+  "options": "--target bmv2 --arch v1model --std p4-16",
+  "switch_cli": "simple_switch_CLI",
+  "cli": true,
+  "pcap_dump": true,
+  "enable_log": true,
+  "topo_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.apptopo",
+    "object_name": "AppTopoStrategies"
+  },
+  "controller_module": null,
+  "topodb_module": {
+    "file_path": "",
+    "module_name": "p4utils.utils.topology",
+    "object_name": "Topology"
+  },
+  "mininet_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.p4net",
+    "object_name": "P4Mininet"
+  },
+  "topology": {
+    "assignment_strategy": "mixed",
+    "auto_arp_tables": "true",
+    "auto_gw_arp": "true",
+
+    "links": [  ["h1", "s1"], ["h2", "s2"], ["h3", "s3"], ["h4", "s6"], ["h5", "s7"], ["h6", "s8"], ["h7", "s11"], ["h8", "s14"], 
+		["h9", "s15"], ["h10", "s17"], ["h11", "s19"], ["h12", "s20"], ["h13", "s21"], ["h14", "s23"], 
+		["s1", "s2"],  ["s1", "s3"],   ["s2", "s4"], ["s2", "s10"], ["s3", "s4"], ["s3", "s5"], ["s4", "s6"], ["s4", "s7"], 
+		["s5", "s8"], ["s6", "s9"], ["s7", "s9"], ["s7", "s10"], ["s8", "s9"], ["s8", "s12"], ["s9", "s12"], ["s9", "s13"], 
+		["s9", "s18"], ["s9", "s19"], ["s9", "s21"], ["s10", "s11"], ["s10", "s13"], ["s10", "s14"], ["s11", "s14"], ["s12","s15"], 
+		["s12", "s21"], ["s13", "s14"], ["s13", "s20"], ["s13", "s22"], ["s15", "s16"], ["s16", "s17"], ["s17", "s18"], ["s18", "s19"], 
+		["s19", "s22"], ["s20", "s24"],["s22", "s23"], ["s23", "s24"] ],
+
+    "hosts": {
+      "h1": {
+      },
+      "h2": {
+      },
+      "h3": {
+      },
+      "h4": {
+      },
+      "h5": {
+      },
+      "h6": {
+      },
+      "h7": {
+      },
+      "h8": {
+      },
+      "h9": {
+      },
+      "h10": {
+      },
+      "h11": {
+      },
+      "h12": {
+      },
+      "h13": {
+      },
+      "h14": {
+      }
+    },
+    "switches": {
+
+      "s1": {
+        "cli_input": "SW-commands/s1-commands.txt"
+      },
+      "s2": {
+        "cli_input": "SW-commands/s2-commands.txt"
+      },
+      "s3": {
+        "cli_input": "SW-commands/s3-commands.txt"
+      },
+      "s4": {
+        "cli_input": "SW-commands/s4-commands.txt"
+      },	
+      "s5": {
+        "cli_input": "SW-commands/s5-commands.txt"
+      }	,
+      "s6": {
+        "cli_input": "SW-commands/s6-commands.txt"
+      },
+      "s7": {
+        "cli_input": "SW-commands/s7-commands.txt"
+      },
+      "s8": {
+        "cli_input": "SW-commands/s8-commands.txt"
+      },
+      "s9": {
+        "cli_input": "SW-commands/s9-commands.txt"
+      },	
+      "s10": {
+        "cli_input": "SW-commands/s10-commands.txt"
+      }	,
+      "s11": {
+        "cli_input": "SW-commands/s11-commands.txt"
+      },
+      "s12": {
+        "cli_input": "SW-commands/s12-commands.txt"
+      },
+      "s13": {
+        "cli_input": "SW-commands/s13-commands.txt"
+      },
+      "s14": {
+        "cli_input": "SW-commands/s14-commands.txt"
+      },	
+      "s15": {
+        "cli_input": "SW-commands/s15-commands.txt"
+      }	,
+      "s16": {
+        "cli_input": "SW-commands/s16-commands.txt"
+      },
+      "s17": {
+        "cli_input": "SW-commands/s17-commands.txt"
+      },
+      "s18": {
+        "cli_input": "SW-commands/s18-commands.txt"
+      },
+      "s19": {
+        "cli_input": "SW-commands/s19-commands.txt"
+      },	
+      "s20": {
+        "cli_input": "SW-commands/s20-commands.txt"
+      }	,
+      "s21": {
+        "cli_input": "SW-commands/s21-commands.txt"
+      },
+      "s22": {
+        "cli_input": "SW-commands/s22-commands.txt"
+      },
+      "s23": {
+        "cli_input": "SW-commands/s23-commands.txt"
+      },
+      "s24": {
+        "cli_input": "SW-commands/s24-commands.txt"
+      }      
+    }
+  }
+}
